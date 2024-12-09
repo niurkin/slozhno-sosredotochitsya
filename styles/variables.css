@@ -16,7 +16,7 @@
 
   --main-font: 'IBM Plex mono';
   --normal-font-size: 18px;
-  --logo-font-size: 116px;
+  --logo-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --logo-shadow-offset: 4px 4px;
 
 }
