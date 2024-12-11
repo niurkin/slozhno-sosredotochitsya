@@ -105,6 +105,19 @@
   border: 1px solid var(--secondary-color);
 }
 
+.page-title {
+  place-self: center;
+  display: flex;
+  flex-direction: column;
+  line-height: 0.82em;
+  text-transform: lowercase;
+  font-weight: bold;
+  row-gap: 0.2rem;
+  font-size: var(--page-title-font-size);
+  color: var(--page-title-color);
+  text-shadow: var(--page-title-shadow-offset) var(--accent-color);
+}
+
 @media (width >= 1000px) {
   .header__theme-menu {
     justify-self: center;
