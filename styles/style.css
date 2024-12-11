@@ -1,3 +1,4 @@
+/* stylelint-disable rule-empty-line-before */
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
@@ -25,8 +26,8 @@
   right: 0;
   inline-size: 25px;
   block-size: 25px;
-  border-top: 1px solid var(--title-color);
-  border-right: 1px solid var(--title-color);
+  border-top: 1px solid var(--secondary-color);
+  border-right: 1px solid var(--secondary-color);
 }
 
 .decorated-zone::after {
@@ -36,8 +37,8 @@
   bottom: var(--decoration-bottom-margin);
   inline-size: 25px;
   block-size: 25px;
-  border-bottom: 1px solid var(--title-color);
-  border-left: 1px solid var(--title-color);
+  border-bottom: 1px solid var(--secondary-color);
+  border-left: 1px solid var(--secondary-color);
 }
 
 .header__rec {
@@ -62,4 +63,55 @@
   border-radius: 50%;
   background-color: var(--accent-color);
   box-shadow: 0 0 4px 2px var(--accent-color);
+}
+
+.header__theme-menu {
+  justify-self: end;
+  align-self: center;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inline-size: 70px;
+  block-size: 26px;
+  font-family: inherit;
+  text-transform: lowercase;
+  line-height: 1rem;
+  color: var(--secondary-color);
+  background-color: transparent;
+  border: 0;
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid var(--secondary-color);
+  cursor: pointer;
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+  border-block-end: 1px solid var(--secondary-color);
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+  border: 1px solid var(--secondary-color);
+}
+
+@media (width >= 1000px) {
+  .header__theme-menu {
+    justify-self: center;
+    align-self: start;
+  }
+  .header__theme-menu-list {
+    flex-direction: row;
+  }
+
 }
