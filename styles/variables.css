@@ -10,13 +10,19 @@
   --background-color: #000028;
   --text-color: #F1B2CE;
   --accent-color: #FF0070;
-  --logo-color: #DB00FF;
+  --page-title-color: #DB00FF;
+  --title-color: #FF0070;
 
-  /* Шрифт и оформление текста */
+  /* Шрифт */
 
   --main-font: 'IBM Plex mono';
   --normal-font-size: 18px;
-  --logo-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  --logo-shadow-offset: 4px 4px;
+  --page-title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+
+  /* Отступы и размеры */
+
+  --main-padding: clamp(0.625rem, 0.2639rem + 1.5408vw, 1.25rem);
+  --footer-header-heigth: calc(100vh - var(--main-padding));
+
 
 }

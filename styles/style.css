@@ -1,6 +1,65 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  font-family: var(--main-font);
+  display: grid;
+  grid-template-rows: var(--footer-header-heigth) auto var(--footer-header-heigth);
+  font-family: var(--main-font), sans-serif;
   font-size: var(--normal-font-size);
+  background-color: var(--background-color);
+  padding: var(--main-padding);
+}
+
+.header {
+  --page-title-shadow-offset: 4px 4px;
+  --decoration-top-margin: 0;
+  --decoration-bottom-margin: var(--main-padding);
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  position: relative;
+}
+
+.decorated-zone::before {
+  content: '';
+  position: absolute;
+  top: var(--decoration-top-margin);
+  right: 0;
+  inline-size: 25px;
+  block-size: 25px;
+  border-top: 1px solid var(--title-color);
+  border-right: 1px solid var(--title-color);
+}
+
+.decorated-zone::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: var(--decoration-bottom-margin);
+  inline-size: 25px;
+  block-size: 25px;
+  border-bottom: 1px solid var(--title-color);
+  border-left: 1px solid var(--title-color);
+}
+
+.header__rec {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  right: 9px;
+  line-height: 25px;
+}
+
+.header__rec::before {
+  content: 'REC';
+  color: var(--accent-color);
+}
+
+.header__rec::after {
+  display: block;
+  align-self: center;
+  content: '';
+  inline-size: 9px;
+  block-size: 9px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--accent-color);
 }
