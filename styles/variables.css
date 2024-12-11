@@ -23,8 +23,6 @@
 
   /* Отступы и размеры */
 
-  --main-padding: clamp(0.625rem, 0.2639rem + 1.5408vw, 1.25rem);
-  --footer-header-heigth: calc(100vh - var(--main-padding));
-
-
+  --main-padding: clamp(10px, 2.6vw, 20px);
+  --title-subtitle-width: 355px;
 }
