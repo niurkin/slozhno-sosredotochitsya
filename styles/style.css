@@ -7,6 +7,11 @@
   font-family: var(--main-font), sans-serif;
   font-size: var(--normal-font-size);
   background-color: var(--background-color);
+  background-image: var(--background-image);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .header {
