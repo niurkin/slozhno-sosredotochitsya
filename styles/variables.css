@@ -9,9 +9,11 @@
 
   --background-color: #000028;
   --text-color: #F1B2CE;
+  --title-color: #000028;
   --accent-color: #FF0070;
   --page-title-color: #DB00FF;
   --secondary-color: #FF0070;
+  --menu-hover-color: #FF007066;
 
   /* Цвета состояний */
 
@@ -24,5 +26,5 @@
   /* Отступы и размеры */
 
   --main-padding: clamp(10px, 2.6vw, 20px);
-  --title-subtitle-width: 355px;
+  --header-subtitle-width: 355px;
 }
