@@ -20,6 +20,7 @@
   display: grid;
   grid-template-rows: 1fr auto 1fr;
   padding: var(--page-padding) 0;
+  row-gap: 0.1rem;
 }
 
 .decorated-zone {
@@ -176,9 +177,10 @@
   color: var(--title-color);
   font-weight: bold;
   font-size: inherit;
+  line-height: 1.4rem;
 }
 
-.card__cintent {
+.card__content {
   color: var(--text-color);
 }
 
@@ -199,7 +201,11 @@
   outline: 1px solid currentColor;
 }
 
-@media (width >= 780px) {
+.card__title-normal-weight {
+  font-weight: normal;
+}
+
+@media (width >= 768px) {
 
   :root {
     --page-title-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
