@@ -13,10 +13,9 @@
   --accent-color: #FF0070;
   --page-title-color: #DB00FF;
   --secondary-color: #FF0070;
+  --background-image: url(../images/cover-image-dark.png);
   --menu-hover-color: #FF007066;
-  --background-image: url('../images/cover-image-dark.png');
 
-  /* Цвета состояний */
 
   /* Шрифт */
 
@@ -26,6 +25,8 @@
 
   /* Отступы и размеры */
 
-  --main-padding: clamp(10px, 2.6vw, 20px);
+  --page-padding: 10px;
   --header-subtitle-width: 355px;
+  --page-gap: 40px;
+  --main-gap: 50px;
 }
