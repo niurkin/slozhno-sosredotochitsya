@@ -1,6 +1,6 @@
 .page {
   display: grid;
-  grid-template-rows: 100vh auto 100vh;
+  grid-template-rows: minmax(668px, 100vh) auto minmax(668px, 100vh);
   row-gap: var(--page-gap);
   font-family: var(--main-font), monospace;
   font-size: var(--normal-font-size);
