@@ -50,7 +50,7 @@
 }
 
 .header__rec {
-  display: flex;
+  display: var(--rec-display);
   gap: 10px;
   position: absolute;
   top: var(--page-padding);
@@ -139,6 +139,7 @@
   inline-size: var(--header-subtitle-width);
   color: var(--title-color);
   font-weight: bold;
+  line-height: var(--line-heigth);
 }
 
 .title-decor {
@@ -149,6 +150,7 @@
   display: grid;
   row-gap: var(--main-gap);
   padding: 0 var(--page-padding);
+  line-height: var(--line-heigth);
 }
 
 .section {
@@ -184,7 +186,6 @@
   color: var(--title-color);
   font-weight: bold;
   font-size: inherit;
-  line-height: 1.4rem;
 }
 
 .card__content {

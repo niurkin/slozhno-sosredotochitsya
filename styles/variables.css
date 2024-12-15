@@ -5,7 +5,7 @@
 
 :root {
 
-  /* Цвета */
+  /* Цвета и оформление */
 
   --background-color: #000028;
   --text-color: #F1B2CE;
@@ -15,6 +15,7 @@
   --secondary-color: #FF0070;
   --background-image: url(../images/cover-image-dark.png);
   --menu-hover-color: #FF007066;
+  --rec-display: flex;
 
 
   /* Шрифт */
@@ -22,6 +23,7 @@
   --main-font: 'IBM Plex mono';
   --normal-font-size: 18px;
   --page-title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --line-heigth: 23.4px;
   
   /* Отступы и размеры */
 
