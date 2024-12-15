@@ -15,7 +15,7 @@
 
   /* Шрифт */
 
-  --main-font: 'IBM Plex mono';
+  --main-font: 'IBM Plex mono', monospace;
   --normal-font-size: 18px;
   --page-title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --line-heigth: 23.4px;
