@@ -314,7 +314,7 @@
 @container even-section (inline-size >= 984px) {
   
   .card-list {
-    grid-template-columns: repeat(auto-fill, calc((100% - 40px) / 3));
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
